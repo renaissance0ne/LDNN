@@ -45,30 +45,30 @@ paths in the notebooks work without changes.
 2. Run this in the first cell:
 
    ```python
-   !git clone https://github.com/renaissance0ne/LLDN.git
-   %cd LLDN
+   !git clone https://github.com/renaissance0ne/LDNN.git
+   %cd LDNN
    !ls data
    ```
 
    You should see `archive_week10.zip`, `face_week9.jpg` and `heart_week8.csv`.
 3. Open a notebook from the cloned repo: in the left sidebar click the
-   **Files** (folder) icon, open the `LLDN` folder and double-click the
+   **Files** (folder) icon, open the `LDNN` folder and double-click the
    `.ipynb` file you want. Alternatively, keep working in the current notebook –
-   since you are now inside `LLDN/`, code like
+   since you are now inside `LDNN/`, code like
    `pd.read_csv('data/heart_week8.csv')` will work directly.
 
 ### Option 2 – Open a notebook straight from GitHub, then fetch the data
 
 1. Open the notebook in Colab, either by:
    - In Colab, **File → Open notebook → GitHub** tab, paste
-     `https://github.com/renaissance0ne/LLDN`, and pick the notebook; or
+     `https://github.com/renaissance0ne/LDNN`, and pick the notebook; or
    - Using a direct link of the form
-     `https://colab.research.google.com/github/renaissance0ne/LLDN/blob/master/<notebook-name>.ipynb`
+     `https://colab.research.google.com/github/renaissance0ne/LDNN/blob/master/<notebook-name>.ipynb`
      (spaces/brackets in the file name are fine; copy the name from GitHub).
 2. Add and run a cell **at the top** of the notebook to pull in the data folder:
 
    ```python
-   !git clone https://github.com/renaissance0ne/LLDN.git repo
+   !git clone https://github.com/renaissance0ne/LDNN.git repo
    !cp -r repo/data .
    !ls data
    ```
@@ -78,11 +78,11 @@ paths in the notebooks work without changes.
    ```python
    !mkdir -p data
    # Week 8
-   !wget -q -O data/heart_week8.csv https://raw.githubusercontent.com/renaissance0ne/LLDN/master/data/heart_week8.csv
+   !wget -q -O data/heart_week8.csv https://raw.githubusercontent.com/renaissance0ne/LDNN/master/data/heart_week8.csv
    # Week 9
-   !wget -q -O data/face_week9.jpg https://raw.githubusercontent.com/renaissance0ne/LLDN/master/data/face_week9.jpg
+   !wget -q -O data/face_week9.jpg https://raw.githubusercontent.com/renaissance0ne/LDNN/master/data/face_week9.jpg
    # Week 10
-   !wget -q -O data/archive_week10.zip https://github.com/renaissance0ne/LLDN/raw/master/data/archive_week10.zip
+   !wget -q -O data/archive_week10.zip https://github.com/renaissance0ne/LDNN/raw/master/data/archive_week10.zip
    ```
 
 3. Run the rest of the notebook as normal.
